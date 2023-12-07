@@ -24,19 +24,19 @@ h1 {
   font-size: 1.75rem;
 }
 
-.TodoWrapper {
+.ToDoWrapper {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
 }
 
-.TodoForm {
+.ToDoForm {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.todo-input {
+.toDo-input {
   outline: none;
   background: none;
   border: 1px solid rgba(53, 121, 17, 0.8);
@@ -47,11 +47,11 @@ h1 {
   color: #fff;
 }
 
-.todo-input::placeholder {
+.toDo-input::placeholder {
   color: #ffffff4d;
 }
 
-.todo-btn {
+.toDo-btn {
   background: rgba(53, 121, 17, 0.8);
   color: #fff;
   border: none;
@@ -59,7 +59,7 @@ h1 {
   cursor: pointer;
 }
 
-.Todo {
+.ToDo {
   display: flex;
   justify-content: space-between;
   align-items: center;
