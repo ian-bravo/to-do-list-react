@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //after making props in wrapper(parent), pass through addTodo
-const ToDoForm = ({addTodo}) => {
+export const ToDoForm = ({addTodo}) => {
   const [value, setValue] = useState("")
 
   const handleSubmit = e => {
@@ -21,4 +21,4 @@ const ToDoForm = ({addTodo}) => {
   )
 }
 
-export default ToDoForm
+// export default ToDoForm;
