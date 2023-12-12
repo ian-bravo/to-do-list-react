@@ -12,12 +12,16 @@ export const ToDoWrapper = () => {
     //add props here first, then import prop in ToDoForm
     console.log(todos)
   }
+
+  const toggleComplete = id => {
+    setTodos(todos.map(todo => todo.id === id ? { ...todo, completed : !todo.completed } : todo))
+  }
   return (
     <div className="ToDoWrapper">
       <h1>Things to do:</h1>
       <ToDoForm addTodo={addTodo}/>
       {todos.map((todo, index) => (
-        <ToDo task={todo} key={index} />
+        <ToDo task={todo} key={index} toggleComplete={toggleComplete}/>
       ))}
     </div>
   )
