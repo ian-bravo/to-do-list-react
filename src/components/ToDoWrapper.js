@@ -9,7 +9,11 @@ export const ToDoWrapper = () => {
   const [todos, setTodos] = useState([])
 
   const addTodo = todo => {
-    setTodos([...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false}])
+    setTodos([...todos, {
+      id: uuidv4(), 
+      task: todo, 
+      completed: false, 
+      isEditing: false}])
     //add props here first, then import prop in ToDoForm
     console.log(todos)
   }
